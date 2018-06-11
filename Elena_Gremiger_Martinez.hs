@@ -8,10 +8,10 @@
 --		Elena Pablo - DNI: 38.339.088
 --		Gremiger Santiago - DNI: 40.504.384
 --		Martinez Christian - DNI: 35.544.318
-
+--
 --Fecha de entrega:
 --		17 de Junio de 2017
-
+--
 --Modo de uso: Si se quiere encriptar un texto usamos la función 'encrypt', con un texto y una clave en bits (por ejemplo, enText y key)
 -- De forma análoga se desencripta un texto. 
 -- Por ejemplo: <encrypt "Hola mundo" key> nos encriptará la oración "Hola mundo" con esa clave de 8 bits

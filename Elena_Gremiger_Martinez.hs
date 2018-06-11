@@ -11,6 +11,11 @@
 
 --Fecha de entrega:
 --		17 de Junio de 2017
+
+--Modo de uso: Si se quiere encriptar un texto usamos la función 'encrypt', con un texto y una clave en bits (por ejemplo, enText y key)
+-- De forma análoga se desencripta un texto. 
+-- Por ejemplo: <encrypt "Hola mundo" key> nos encriptará la oración "Hola mundo" con esa clave de 8 bits
+
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
 
@@ -20,6 +25,7 @@ data Bit = O | I deriving (Show, Eq)
 --Variable que contiene el tamaño de la clave
 keySize :: Int
 keySize = 8
+
 
 -------------------------------------------------------------------------------------
 --Variables para el testing del programa
@@ -34,6 +40,11 @@ desText = "Chapter 1: A Long-Expected Party When Mr. Bilbo Baggins of Bag End an
 --Clave para encriptar/desencriptar
 key :: [Bit]
 key = [O, I, O, O, I, O, O, I]
+
+--Testing rapido
+fastEnc= encrypt desText key
+
+fastDes= desencrypt enText key
 
 
 -------------------------------------------------------------------------------------
